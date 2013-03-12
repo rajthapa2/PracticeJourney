@@ -217,6 +217,12 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Car\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeJ.Web.Model\PracticeJ.Web.Model.csproj">
+      <Project>{64A49089-510F-48AA-92A1-4F1E8FDD1645}</Project>
+      <Name>PracticeJ.Web.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
