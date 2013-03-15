@@ -1,0 +1,16 @@
+﻿@using Practice.Web.Model
+
+@helper DisplayReferenceDataDropdown(List<ReferenceDataItem> items, string id, string dataBind, string pleaseSelectTex = "", bool includePleaseSelect =false)
+{
+    <select id="@id" data-bind="@dataBind">
+        @if(includePleaseSelect && !string.IsNullOrEmpty(pleaseSelectTex))
+        {
+            <option value="">@pleaseSelectTex</option>
+        }
+        @foreach(var item in items)
+        {
+            var itemId = string.Format("{0}-{1}", id, item.Code);
+            <option id="@itemId" value="@item.Code">@item.Description</option>
+        }
+    </select>
+}

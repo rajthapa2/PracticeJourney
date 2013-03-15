@@ -1,0 +1,10 @@
+﻿@helper Error(string dataBindValue, string idPrefix ="")
+{
+    var id = string.IsNullOrEmpty(idPrefix) ? string.Format("{0} -validation", dataBindValue) : string.Format("{0}-{1}-validation", idPrefix, dataBindValue);
+    <div class="error-container">
+        <p class="error" id="@id" data-bind="validataionMessage: @dataBindValue" style="display: none"></p>
+    </div>
+    
+    }
+
+
