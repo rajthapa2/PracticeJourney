@@ -12,14 +12,22 @@ namespace Practice.Web.Journey.Controllers
         //
         // GET: /Car/
 
+       
         public ActionResult Index()
         {
+            PopulateReferenceDataViewBag();
             return View();
+        }
+
+        private void PopulateReferenceDataViewBag()
+        {
+            PopulatePersonalDetailsReferenceData();
         }
 
         private void PopulatePersonalDetailsReferenceData()
         {
             ViewBag.TitleTypes = TitleGender.GetTitleTypes();
+            ViewBag.DisplayTitles = TitleGender.GetDisplayTitles();
         }
     }
 }

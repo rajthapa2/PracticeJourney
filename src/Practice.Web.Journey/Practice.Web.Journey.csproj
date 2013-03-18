@@ -218,7 +218,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Car\PersonalDetails.cshtml.cshtml" />
+    <Content Include="Views\Car\PersonalDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\ErrorTextHelper.cshtml" />
@@ -231,6 +231,15 @@
       <Project>{64A49089-510F-48AA-92A1-4F1E8FDD1645}</Project>
       <Name>Practice.Web.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Car\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Car\SectionTemplates.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Car\PersonalDetailsSection.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

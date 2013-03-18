@@ -32,5 +32,10 @@ namespace Practice.Web.Model
         {
             return TitleGenderMap.Select(x => new ReferenceDataItem(x.Key, x.Value.Description)).ToList();
         }
+
+        public static Dictionary<string, string> GetDisplayTitles()
+        {
+            return TitleGenderMap.ToDictionary(item => item.Key, item => item.Value.DisplayTitle);
+        }
     }
 }
