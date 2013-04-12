@@ -1,5 +1,7 @@
 ﻿@{
-    ViewBag.Title = "PersonalDetailsSection";
+    Layout = "../Shared/_SectionLayout.cshtml";
 }
+<div id="personal-details" data-bind="with: PersonalDetails">
+    @Html.Partial("PersonalDetails")
+</div>
 
-@Html.Partial("PersonalDetails")

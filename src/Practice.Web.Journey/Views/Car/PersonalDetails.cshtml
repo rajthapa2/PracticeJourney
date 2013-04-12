@@ -1,7 +1,7 @@
 ﻿@using Practice.Web.Model
 
-
 <div>
     <label for="your-title">What is your title?</label>
     @ErrorTextHelper.Error("TitleCode")
+    @HtmlCustomHelpers.DisplayReferenceDataDropdown(@ViewBag.TitleTypes, "proposer-title", "value: TitleCode", "Please select...", true)
 </div>

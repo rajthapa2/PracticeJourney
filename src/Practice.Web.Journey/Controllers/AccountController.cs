@@ -54,7 +54,7 @@ namespace Web.Journey.Controllers
         {
             WebSecurity.Logout();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Car");
         }
 
         //
@@ -337,7 +337,7 @@ namespace Web.Journey.Controllers
             }
             else
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Car");
             }
         }
 

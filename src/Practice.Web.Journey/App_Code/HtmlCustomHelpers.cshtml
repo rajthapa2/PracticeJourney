@@ -1,11 +1,11 @@
 ﻿@using Practice.Web.Model
 
-@helper DisplayReferenceDataDropdown(List<ReferenceDataItem> items, string id, string dataBind, string pleaseSelectTex = "", bool includePleaseSelect =false)
+@helper DisplayReferenceDataDropdown(List<ReferenceDataItem> items, string id, string dataBind, string pleaseSelectText = "", bool includePleaseSelect =false)
 {
     <select id="@id" data-bind="@dataBind">
-        @if(includePleaseSelect && !string.IsNullOrEmpty(pleaseSelectTex))
+        @if(includePleaseSelect && !string.IsNullOrEmpty(pleaseSelectText))
         {
-            <option value="">@pleaseSelectTex</option>
+            <option value="">@pleaseSelectText</option>
         }
         @foreach(var item in items)
         {
