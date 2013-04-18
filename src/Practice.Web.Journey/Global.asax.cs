@@ -16,36 +16,11 @@ namespace Practice.Web.Journey
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            //routes.MapRoute(null,
-            //                "{controller}/{action}",
-            //                new
-            //                    {
-            //                        controller = "Car",
-            //                        action = "Index"
-            //                    }
-            //    );
-
-
-
-
-            routes.MapRoute("CarJourney", "car/{pageName}/{sectionName}",
-                new
-                {
-                    controller = "Car",
-                    action = "Index",
-                    pageName = UrlParameter.Optional,
-                    sectionName = UrlParameter.Optional
-                });
-
-
             routes.MapRoute(
                 "Default",
                 "{controller}/{action}/{id}",
                 new { controller = "Car", action = "Index", id = UrlParameter.Optional }
                 );
-
-
         }
 
         protected void Application_Start()
@@ -59,7 +34,5 @@ namespace Practice.Web.Journey
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
         }
-
-
     }
 }
