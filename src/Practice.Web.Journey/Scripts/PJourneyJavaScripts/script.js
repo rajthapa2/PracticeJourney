@@ -1,1 +1,1 @@
-﻿var practice_journey = practice_journey || { };
+﻿var practice_journey = practice_journey || {};
