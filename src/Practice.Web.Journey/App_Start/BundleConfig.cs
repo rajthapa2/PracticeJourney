@@ -10,6 +10,7 @@ namespace Web.Journey
         {
             bundles.Add(new ScriptBundle("~/Scripts/libs").Include(
                 "~/Scripts/libs/knockout-2.1.0.js",
+                "~/Scripts/libs/jquery-1.7.1.js",
                 "~/Scripts/libs/modernizr-2.5.3.js"));
             bundles.Add(new ScriptBundle("~/Scripts/PJourneyJavaScripts").Include(
                 "~/Scripts/PJourneyJavaScripts/script.js",
