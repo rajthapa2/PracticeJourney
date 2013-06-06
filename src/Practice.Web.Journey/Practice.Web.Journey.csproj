@@ -191,6 +191,7 @@
     <Content Include="Scripts\PJourneyJavaScripts\ErrorMessages.js" />
     <Content Include="Scripts\PJourneyJavaScripts\PersonalDetails.js" />
     <Content Include="Scripts\PJourneyJavaScripts\script.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\Section.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
