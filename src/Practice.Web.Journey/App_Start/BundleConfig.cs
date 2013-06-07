@@ -20,9 +20,9 @@ namespace Web.Journey
                 "~/Scripts/PJourneyJavaScripts/Sections.js",
                 "~/Scripts/PJourneyJavaScripts/Page.js",
                 "~/Scripts/PJourneyJavaScripts/Pages.js",
-
                 "~/Scripts/PJourneyJavaScripts/Journey.js",
                 "~/Scripts/PJourneyJavaScripts/ErrorMessages.js",
+                "~/Scripts/PJourneyJavaScripts/PolicyDetails.js",
                 "~/Scripts/PJourneyJavaScripts/PersonalDetails.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're

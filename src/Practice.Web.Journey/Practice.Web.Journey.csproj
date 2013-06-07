@@ -188,6 +188,7 @@
     <Content Include="Scripts\libs\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\libs\knockout-2.1.0.js" />
     <Content Include="Scripts\libs\modernizr-2.5.3.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\PolicyDetails.js" />
     <Content Include="Scripts\PJourneyJavaScripts\Sections.js" />
     <Content Include="Scripts\PJourneyJavaScripts\Page.js" />
     <Content Include="Scripts\PJourneyJavaScripts\Pages.js" />
