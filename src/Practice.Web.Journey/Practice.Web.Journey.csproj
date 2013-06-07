@@ -188,6 +188,11 @@
     <Content Include="Scripts\libs\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\libs\knockout-2.1.0.js" />
     <Content Include="Scripts\libs\modernizr-2.5.3.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\Sections.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\Page.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\Pages.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\Journey.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\Initialisation.js" />
     <Content Include="Scripts\PJourneyJavaScripts\ErrorMessages.js" />
     <Content Include="Scripts\PJourneyJavaScripts\PersonalDetails.js" />
     <Content Include="Scripts\PJourneyJavaScripts\script.js" />
