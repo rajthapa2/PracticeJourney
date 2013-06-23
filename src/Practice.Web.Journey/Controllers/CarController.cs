@@ -8,12 +8,13 @@ namespace Practice.Web.Journey.Controllers
         //
         // GET: /Car/
 
-       
         public ActionResult Index()
         {
             PopulateReferenceDataViewBag();
             return View();
         }
+
+        #region Private
 
         private void PopulateReferenceDataViewBag()
         {
@@ -24,6 +25,11 @@ namespace Practice.Web.Journey.Controllers
         {
             ViewBag.TitleTypes = TitleGender.GetTitleTypes();
             ViewBag.DisplayTitles = TitleGender.GetDisplayTitles();
+            ViewBag.MaritalStatusTypes = MaritalStatusGroup.GetMaritalTypes();
+            ViewBag.DisplayMaritalStatus = MaritalStatusGroup.GetDisplayMaritalTypes();
+
         }
+
+        #endregion
     }
 }

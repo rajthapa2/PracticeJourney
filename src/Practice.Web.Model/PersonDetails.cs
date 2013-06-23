@@ -24,5 +24,8 @@ namespace Practice.Web.Model
         [Required]
         public string DateOfBirth { get; set; }  
 
+        [Required]
+        public string MaritalStatus { get; set; }
+
     }
 }
