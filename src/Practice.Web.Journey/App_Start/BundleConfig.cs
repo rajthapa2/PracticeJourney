@@ -11,7 +11,6 @@ namespace Web.Journey
             bundles.Add(new ScriptBundle("~/Scripts/libs").Include(
               "~/Scripts/libs/jquery-1.7.1.js",
                 "~/Scripts/libs/knockout-2.1.0.js",
-                "~/Scripts/libs/jquery-1.7.1.js",
                 "~/Scripts/libs/modernizr-2.5.3.js"));
             bundles.Add(new ScriptBundle("~/Scripts/PJourneyJavaScripts").Include(
                 "~/Scripts/PJourneyJavaScripts/script.js",
@@ -22,8 +21,8 @@ namespace Web.Journey
                 "~/Scripts/PJourneyJavaScripts/Pages.js",
                 "~/Scripts/PJourneyJavaScripts/Journey.js",
                 "~/Scripts/PJourneyJavaScripts/ErrorMessages.js",
-                "~/Scripts/PJourneyJavaScripts/PolicyDetails.js",
-                "~/Scripts/PJourneyJavaScripts/PersonalDetails.js"));
+                "~/Scripts/PJourneyJavaScripts/PersonalDetails.js",
+                "~/Scripts/PJourneyJavaScripts/PolicyDetails.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
