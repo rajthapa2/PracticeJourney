@@ -1,4 +1,4 @@
-﻿practice_journey.JourneyModel = function (pages) {
+﻿practice_journey.JourneyModel = function (pages,risk) {
     var self = this;
     self.DefaultPage = (pages ? pages[0] : null);
     self.CurrentPage = ko.observable(self.DefaultPage);
@@ -19,9 +19,9 @@
         pageName = pageName && pageName.length > 0 ? pageName : self.DefaultPage;
         sectionName = sectionName && sectionName.length > 0 ? sectionName : null;
 //        var page = getPageByName(pageName);
-        var page = practice_journey.Pages()[0];
-        self.CurrentPage().Remove();
-        page.CreateWith(sectionName);
+        var page = practice_journey.Pages(risk)[0];
+//        self.CurrentPage().Remove();
+        page.CreateWith(pageName.SectionName);
         self.CurrentPage(page);
     };
 };

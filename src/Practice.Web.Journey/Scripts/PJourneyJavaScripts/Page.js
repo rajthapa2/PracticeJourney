@@ -1,11 +1,10 @@
-﻿practice_journey.Page = function (pageName, title, sections) {
+﻿practice_journey.Page = function (sectionName, pageTitle, sections) {
     var self = this;
-    self.Name = pageName;
-    self.Title = title;
+    self.PageTitle = pageTitle;
     self.Sections = sections;
-
+    self.SectionName = sectionName;
     self.Remove = function () {
-        var pageElement = document.getElementById(pageName);
+        var pageElement = document.getElementById(PageTitle);
         if (pageElement) {
             ko.removeNode(pageElement);
         }
@@ -13,7 +12,7 @@
 
     self.CreateWith = function (pageToShow) {
 
-        var pageTemplate = document.getElementById(pageName + '-template').innerHTML;
-        $(document.getElementById('car-journey')).append('<section class=\page\'id="' + pageName + '">' + pageTemplate + "</section>");
+        var pageTemplate = document.getElementById(pageToShow + '-template').innerHTML;
+        $(document.getElementById('car-journey')).append('<section class=\page\'id="' + pageToShow + '">' + pageTemplate + "</section>");
     };
 };

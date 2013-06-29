@@ -14,7 +14,9 @@ namespace Web.Journey
                 "~/Scripts/libs/modernizr-2.5.3.js"));
             bundles.Add(new ScriptBundle("~/Scripts/PJourneyJavaScripts").Include(
                 "~/Scripts/PJourneyJavaScripts/script.js",
+                "~/Scripts/PJourneyJavaScripts/Risk.js",
                 "~/Scripts/PJourneyJavaScripts/Initialisation.js",
+                "~/Scripts/PJourneyJavaScripts/SectionTitle.js",
                 "~/Scripts/PJourneyJavaScripts/Section.js",
                 "~/Scripts/PJourneyJavaScripts/Sections.js",
                 "~/Scripts/PJourneyJavaScripts/Page.js",
