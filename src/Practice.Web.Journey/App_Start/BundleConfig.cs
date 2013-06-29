@@ -17,6 +17,7 @@ namespace Web.Journey
                 "~/Scripts/PJourneyJavaScripts/Risk.js",
                 "~/Scripts/PJourneyJavaScripts/Initialisation.js",
                 "~/Scripts/PJourneyJavaScripts/SectionTitle.js",
+                "~/Scripts/PJourneyJavaScripts/SectionViewModel.js",
                 "~/Scripts/PJourneyJavaScripts/Section.js",
                 "~/Scripts/PJourneyJavaScripts/Sections.js",
                 "~/Scripts/PJourneyJavaScripts/Page.js",

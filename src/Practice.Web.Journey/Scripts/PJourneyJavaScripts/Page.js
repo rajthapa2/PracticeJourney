@@ -11,8 +11,14 @@
     };
 
     self.CreateWith = function (pageToShow) {
-
         var pageTemplate = document.getElementById(pageToShow + '-template').innerHTML;
         $(document.getElementById('car-journey')).append('<section class=\page\'id="' + pageToShow + '">' + pageTemplate + "</section>");
+        self.InitializeBindings();
+    };
+
+    self.InitializeBindings = function () {
+        $.each(sections, function (j, section) {
+        section.InitializeBindings()
+        });
     };
 };
