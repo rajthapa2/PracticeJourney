@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Transactions;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using DotNetOpenAuth.AspNet;
@@ -11,7 +10,7 @@ using WebMatrix.WebData;
 using Web.Journey.Filters;
 using Web.Journey.Models;
 
-namespace Web.Journey.Controllers
+namespace Practice.Web.Journey.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]

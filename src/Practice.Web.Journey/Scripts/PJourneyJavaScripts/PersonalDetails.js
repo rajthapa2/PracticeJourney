@@ -6,6 +6,9 @@
     practice_journey.SectionViewModel.apply(this, arguments);
     this.SaveActionUrl = 'risk/SavePersonalDetails';
 
+    self.toJSON = function () {
+        return ko.mapping.toJSON(self, PersonalDetailsModel.mapping);
+    };
     self.TitleCode = ko.observable("");
     //.extend({ required: { message: practice_journey.ErrorMessage.required} });
     self.FirstName = ko.observable("");
@@ -16,7 +19,7 @@
     //.extend({ required: { message: practice_journey.ErrorMessage.required} });
     self.FullName = ko.computed({
         read: function () {
-            return self.FirstName() + " " + self.LastName()
+            return self.FirstName() + " " + self.LastName();
         },
         write: function (value) {
             var lastSpacePos = value.lastIndexOf(" ");
@@ -29,3 +32,4 @@
 };
 
 practice_journey.PersonalDetailsModel.SectionName = 'personal-details-section';
+practice_journey.PersonalDetailsModel.mapping = {};

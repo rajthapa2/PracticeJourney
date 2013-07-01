@@ -4,7 +4,7 @@
     self.ViewModel = viewModel;
     self.Title = title;
     self.FinishSection = function () {
-        self.ViewModel.Save()
+        self.ViewModel.Save();
     };
     self.InitializeBindings = function (sectionName) {
         sectionName = sectionName || document.getElementById(self.SectionName);
