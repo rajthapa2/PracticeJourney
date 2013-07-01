@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Practice.Web.Model
 {
@@ -7,8 +8,16 @@ namespace Practice.Web.Model
         public Risk()
         {            
         }
+
+        public Risk(PersonDetails personDetails)
+        {
+            PersonDetails = personDetails;
+            
+        }
+
         [Required, ValidateObject]
         public PersonDetails PersonDetails { get; set; }
-
+        [Required, ValidateObject]
+        public PolicyDetails PolicyDetails { get; set; } 
     }
 }

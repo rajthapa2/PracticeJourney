@@ -1,7 +1,7 @@
 ﻿practice_journey.SectionViewModel = function () {
-    this.saveActionUrl = "";
+    this.SaveActionUrl = "";
     this.Save = function () {
         var serviceClient = new practice_journey.ServiceClient();
-        serviceClient.post(this.saveActionUrl, this.ToJSON());
+        serviceClient.post(this.SaveActionUrl, this.ToJSON());
     };
 };

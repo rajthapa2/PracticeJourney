@@ -6,8 +6,8 @@
     practice_journey.SectionViewModel.apply(this, arguments);
     this.SaveActionUrl = 'risk/SavePersonalDetails';
 
-    self.toJSON = function () {
-        return ko.mapping.toJSON(self, PersonalDetailsModel.mapping);
+    self.ToJSON = function () {
+        return ko.mapping.toJSON(self);
     };
     self.TitleCode = ko.observable("");
     //.extend({ required: { message: practice_journey.ErrorMessage.required} });
@@ -32,4 +32,4 @@
 };
 
 practice_journey.PersonalDetailsModel.SectionName = 'personal-details-section';
-practice_journey.PersonalDetailsModel.mapping = {};
+practice_journey.PersonalDetailsModel.Mapping = {};

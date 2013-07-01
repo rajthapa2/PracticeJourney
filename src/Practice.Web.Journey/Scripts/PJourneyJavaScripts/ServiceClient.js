@@ -35,6 +35,6 @@
         data = data || {};
         var manageSpinner = options.manageSpinner === undefined ? true : options.manageSpinner;
         var async = options.async = undefined ? true : options.async;
-        return $.ajax({ url: url, dataType: "json", contentType: "application/json", type: "POST", cache: false, data: data, async: async, success: constructSuccessCallBack(successCallback), error: constructErrorCallBack(options.error), complete: constructAjaxcompletecallBack(options, complete, manageSpinner) });
+        return $.ajax({ url: url, dataType: "json", contentType: "application/json", type: "POST", cache: false, data: data, async: async, success: constructSuccessCallBack(successCallback), error: constructErrorCallBack(options.error) });
     };
 };
