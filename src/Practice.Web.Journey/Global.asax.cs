@@ -3,7 +3,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Web.Journey;
+using Practice.Web.Journey.App_Start;
 
 namespace Practice.Web.Journey
 {

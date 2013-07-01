@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace Web.Journey
+namespace Practice.Web.Journey.App_Start
 {
     public class FilterConfig
     {

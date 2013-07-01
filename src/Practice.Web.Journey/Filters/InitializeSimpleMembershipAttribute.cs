@@ -3,10 +3,10 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
+using Practice.Web.Journey.Models;
 using WebMatrix.WebData;
-using Web.Journey.Models;
 
-namespace Web.Journey.Filters
+namespace Practice.Web.Journey.Filters
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public sealed class InitializeSimpleMembershipAttribute : ActionFilterAttribute

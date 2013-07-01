@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
+using Practice.Web.Journey.Filters;
+using Practice.Web.Journey.Models;
 using WebMatrix.WebData;
-using Web.Journey.Filters;
-using Web.Journey.Models;
 
 namespace Practice.Web.Journey.Controllers
 {
