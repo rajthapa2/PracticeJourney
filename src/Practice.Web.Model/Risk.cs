@@ -5,19 +5,19 @@ namespace Practice.Web.Model
 {
     public class Risk
     {
-        public Risk()
-        {            
-        }
-
-        public Risk(PersonDetails personDetails)
-        {
-            PersonDetails = personDetails;
-            
-        }
-
+        public Guid RiskId { get; set; }
         [Required, ValidateObject]
         public PersonDetails PersonDetails { get; set; }
         [Required, ValidateObject]
         public PolicyDetails PolicyDetails { get; set; } 
+
+        public Risk(Guid riskId)
+        {
+            RiskId = riskId;
+        }
+        public Risk(PersonDetails personDetails)
+        {
+            PersonDetails = personDetails;    
+        }
     }
 }

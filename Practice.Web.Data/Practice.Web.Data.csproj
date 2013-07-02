@@ -51,6 +51,8 @@
     <Compile Include="Entities\PersonDetails.cs" />
     <Compile Include="MongoConnectionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EntityService.cs" />
+    <Compile Include="Services\IEntityService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

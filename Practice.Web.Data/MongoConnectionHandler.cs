@@ -16,15 +16,11 @@ namespace Practice.Web.Data
             //Get a reference to a server object from the Mongo Client object
             var mongoServer = mongoClient.GetServer();
             //Get a reference to the "practiceweb" database object from the mongo server object
-            const string databaseName = "practiceWeb";
+            const string databaseName = "practiceDB";
             var db = mongoServer.GetDatabase(databaseName);
             //Get a reference to the collection object from the Mongo database onject
             //The collection name is the type converted to lowercase "s"
             MongoCollection = db.GetCollection<T>(typeof (T).Name.ToLower() + "s");
         }
-    
-    
-    
-    
     }
 }
