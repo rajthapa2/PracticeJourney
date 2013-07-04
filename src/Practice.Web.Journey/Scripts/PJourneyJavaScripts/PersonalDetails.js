@@ -9,14 +9,14 @@
     self.ToJSON = function () {
         return ko.mapping.toJSON(self);
     };
-    self.TitleCode = ko.observable("");
-    //.extend({ required: { message: practice_journey.ErrorMessage.required} });
-    self.FirstName = ko.observable("");
-    //.extend({ required: { message: practice_journey.ErrorMessage.required} });
-    self.LastName = ko.observable("");
-    //.extend({ required: { message: practice_journey.ErrorMessage.required} });
-    self.MaritalStatus = ko.observable("");
-    //.extend({ required: { message: practice_journey.ErrorMessage.required} });
+    self.TitleCode = ko.observable("")
+    .extend({ required: { message: practice_journey.ErrorMessage.required} });
+    self.FirstName = ko.observable("")
+    .extend({ required: { message: practice_journey.ErrorMessage.required} });
+    self.LastName = ko.observable("")
+    .extend({ required: { message: practice_journey.ErrorMessage.required} });
+    self.MaritalStatus = ko.observable("")
+    .extend({ required: { message: practice_journey.ErrorMessage.required} });
     self.FullName = ko.computed({
         read: function () {
             return self.FirstName() + " " + self.LastName();
