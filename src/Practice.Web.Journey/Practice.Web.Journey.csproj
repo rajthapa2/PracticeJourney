@@ -195,7 +195,9 @@
     <Content Include="Scripts\libs\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\libs\knockout-2.1.0.js" />
     <Content Include="Scripts\libs\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\libs\knockout.validation-withdetails.js" />
     <Content Include="Scripts\libs\modernizr-2.5.3.js" />
+    <Content Include="Scripts\PJourneyJavaScripts\ErrorMessageModel.js" />
     <Content Include="Scripts\PJourneyJavaScripts\ServiceClient.js" />
     <Content Include="Scripts\PJourneyJavaScripts\SectionViewModel.js" />
     <Content Include="Scripts\PJourneyJavaScripts\Risk.js" />

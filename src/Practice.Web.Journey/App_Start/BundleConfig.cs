@@ -8,9 +8,10 @@ namespace Practice.Web.Journey.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/Scripts/libs").Include(
-              "~/Scripts/libs/jquery-1.7.1.js",
-               "~/Scripts/libs/knockout-2.1.0.js",
+                "~/Scripts/libs/jquery-1.7.1.js",
+                "~/Scripts/libs/knockout-2.1.0.js",
                 "~/Scripts/libs/knockout.mapping-latest.debug.js",
+                "~/Scripts/libs/knockout.validation-withdetails.js",
                 "~/Scripts/libs/modernizr-2.5.3.js"));
             bundles.Add(new ScriptBundle("~/Scripts/PJourneyJavaScripts").Include(
                 "~/Scripts/PJourneyJavaScripts/script.js",
